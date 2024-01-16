@@ -95,7 +95,12 @@ nav ul a span{
     background: rgba(255, 255, 255, 0.30)
 
 }
-.find-container input{
+input.where{
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
     width: 174px;
     height: 52px;
     border-radius: 8px;
@@ -103,7 +108,7 @@ nav ul a span{
     border: none;
     padding: 0;
 }
-.find-container input[type=text]{
+.where input[type=text]{
     color: rgba(19, 19, 24, 0.50);
     text-align: center;
     font-family: Mulish;
@@ -112,23 +117,29 @@ nav ul a span{
 }
 .selectbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 8px;
     background-color: #FFF;
     width: 174px;
     height: 52px;
 }
-.selectbox h5{
+.selectbox span{
+    color: #131318;
+}
+input.select-input{
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
     color: rgba(19, 19, 24, 0.50);
     font-family: Mulish;
     font-size: 1rem;
+    font-style: normal;
     font-weight: 400;
-    margin-left: 14px;
+    width: 100px;
 }
-.selectbox i{
-    margin-right: 14px;
-}
+
 .search{
     width: 174px;
     height: 52px;
@@ -140,11 +151,35 @@ nav ul a span{
     font-family: Mulish;
     font-size: 1rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
-.search a{
-    text-decoration: none;
+input.search-input{
+    width: 100px;
     color: #FFF;
-    margin-left: 40px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0;
+}
+input.search-input::placeholder {
+    color: #FFF;
+}
+.search-btn{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 24px;
+}
+.material-symbols-outlined{
+    color: white;
 }
 /* main portion 1 */
 .popular-container{
@@ -328,69 +363,65 @@ nav ul a span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 24px;
 }
 .package-container-title{
     color: #131318;
     text-align: center;
     font-family: Mulish;
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 800; 
 }
-.package-container-description{
-    color: rgba(19, 19, 24, 0.70);
-    text-align: center;
-    font-family: Mulish;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.625rem;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+.package-portion-container{
+    display: flex; 
+    justify-content: space-between;
+    gap:50px;  
 }
-.package-card-container{
-    display: flex;
-    gap: 16px;
-    justify-content: center;
+.package-portion-container img{
+    height: 90px;
+    width: 90px;
+    margin: 0;
+    padding: 0;
 }
-.package-card{
-    height: 100%;
-    border: 3px solid rgba(233, 68, 68, 0.20);
+.package-portion{
+    border-radius: 1rem;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background-color:#151515;
+    width: 284px;
+    height: 450px;
+    padding: 20px;
+}
+.package-portion-lg{
+    width: 284px;
+    height: 450px;
     border-radius: 16px;
-    background-color: rgba(233, 68, 68, 0.05);
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background-color: #151515;
+    padding: 20px;
 }
-.package-card-name{
-    color: #131318;
+.package-portion-title{
+    color: #f8A145;
     font-family: Mulish;
     font-size: 1.5rem;
     font-weight: 800;
-    text-align: center;
-    margin-top: 40px;
+    margin-top: 0;
 }
-.package-card-price{
-    font-family: Mulish;
-    font-size: 4rem;
-    font-weight: 800;
-    color: #FF5400;
-    text-align: center;
-    border: 3px solid #FF5400;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 24px;
-    background-color: #131318;
-    box-shadow: 5px 0px 50px 0px;
-}
-.package-card-description p{
-    color: #5A5A5D;
-    margin: 0;
+.package-portion-description{
+    color: #FFF;
     font-family: Mulish;
     font-size: 1rem;
     font-weight: 400;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
+    line-height: 1.625rem; 
+}
+.package-container-description{
+    color: #5A5A5D;
+    font-family: Mulish;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;   
 }
 /* main newsletter portion */
 .newsletter-container{
@@ -589,15 +620,15 @@ footer{
         margin-bottom: 16px;
         
     }
-    .find-container input[type=text]{
+    input.where{
         margin-left: auto;
         margin-right: auto;
-        width: 239px;
+        width: 247px;
         height: 52px;
         margin-top: 16px;
         text-align: left;
         display: flex;
-        padding-left: 16px;
+        padding-left: 8px;
 
     }
     .selectbox {
@@ -605,7 +636,12 @@ footer{
         height: 52px;
         margin-left: auto;
         margin-right: auto;
+        gap: 110px;
 
+    }
+    input.select-input{
+        width: 100px;
+        margin-top: 0;
     }
     .search{
         width: 255px;
@@ -614,10 +650,13 @@ footer{
         margin-right: auto;
         margin-bottom: 16px;
     }
-    .search a {
-        margin-left: 75px;
-        margin-right: auto;
+    input.search-input{
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        color: #FFF;
     }
+    
     .popular-container{
         flex-direction: column;
         margin: 0;
@@ -716,6 +755,10 @@ footer{
     }
     .card-portion-container{
         font-size: 0.875rem;
+    }
+    .package-portion-container{
+        flex-direction: column;
+        gap: 16px;
     }
     .newsletter-container{
         flex-direction: column;
