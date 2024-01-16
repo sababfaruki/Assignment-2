@@ -1,3 +1,5 @@
+/* nav portion */
+
 /* banner portion */
 .banner-text{
     background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Images/Group\ 13\ \(1\)\ \(1\).png); 
@@ -140,6 +142,296 @@
     font-weight: 800;
     border: none;
 }
+/* main 3rd  grid portion */
+.location-grid-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.location-grid-title{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.photo-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 16px;
+}
+.location-grid-description{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-bottom: 48px;
+}
+.mal-ind{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    gap: 24px;
+}
+.sri-nor-ka{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    position: relative;
+   
+
+}
+.sri-nor-ka img{
+    border-radius: 16px;
+}
+
+.ban-ban{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+.ban-ban img{
+    border-radius: 16px;
+}
+.text{
+    position: relative;
+}
+.text h4{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+/* main 4th card portion */
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 24px;
+}
+.card-container-title{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;    
+}
+.card-portion-container{
+    display: flex; 
+    justify-content: space-between;
+    gap: 24px;  
+}
+.card-portion{
+    border-radius: 1rem;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background-color: rgba(251, 181, 99, 0.05);
+    width: 573px;
+    height: 284px;
+    padding: 32px;
+}
+.card-portion-lg{
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background-color: rgba(41, 206, 246, 0.05);
+    padding: 32px;
+}
+.card-portion-title{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.card-portion-description{
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem; 
+}
+.card-container-description{
+    color: #5A5A5D;
+    font-family: Mulish;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;   
+}
+/* main newsletter portion */
+.newsletter-container{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 100px;
+}
+form{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+form input[type=text]{
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    padding: 0;
+    padding-left: 16px;
+}
+form button{
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.25rem;
+    font-weight: 800;
+    width: 409px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+}
+.newsletter-text-title{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+
+}
+.newsletter-text-description{
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-bottom: 24px;
+}
+.newsletter-form-container{
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+.newsletter-img{
+    position: relative;
+}
+.discount-container{
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0;
+    position: absolute;
+    right: 7px;
+    top: 255px;
+}
+
+.discount-container-title{
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+.discount-container-description{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 auto;
+    
+}
+/* footer section styles */
+footer{
+    margin-top: 100px;
+    background-color: rgba(19, 19, 24, 0.05);
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: column;
+}
+.name-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.hr-line hr{
+    width: 800px;
+    color:  #1313181A;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+
+}
+.name{
+    color: var(--Dark-01, #131318);
+    font-family: Mulish;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.name span{
+    color: #FF5400;
+}
+.footer-description p{
+    color: #5A5A5D;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.social-icons{
+    margin-top: 32px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.icon-img i{
+    color: #131318;
+}
+.copyright p{
+    display: flex;
+    justify-content: center;
+    color: #131318;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
 
 
 
@@ -221,7 +513,7 @@
         margin: 0;
     }
     .popular-text h2{
-        margin-top: 24px;
+        margin-top: 0;
         font-size: 1.25rem;
         padding: 20px;
         padding-bottom: 0;
@@ -229,4 +521,144 @@
     .btn-primary{
         margin-left: 20px;
     }
+    .mal-ind{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 16px;
+    }
+    .sri-nor-ka{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 16px;
+    }
+    .ban-ban{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 16px;
+    }
+    .photo-grid{
+        gap: 16px;
+    }
+    .photo-grid img{
+        width: 335px;
+        height: 176px;
+    }
+    .location-grid-title{
+        font-size: 1.25rem;
+    }
+    .location-grid-description{
+        margin-top: 0;
+        font-size: .875rem;
+    }
+    .card-container{
+        gap: 16px;
+    }
+    .card-portion-container{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .card-portion{
+        width: 335px;
+        height: 289px;
+        padding: 10px;
+    }
+    .card-portion img{
+        margin-top: 20px;
+    }
+    .card-portion-lg{
+        width: 335px;
+        height: 289px; 
+        padding: 10px;       
+    }
+    .card-portion-lg img{
+        margin-top: 20px;
+    }
+    .card-container-description{
+        margin-top: 0;
+        padding: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .card-container-title{
+        font-size: 1.25rem;
+    }
+    .card-portion-title{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .card-portion-container{
+        font-size: 0.875rem;
+    }
+    .newsletter-container{
+        flex-direction: column;
+        margin-top: 24px;
+    }
+    .newsletter-img img{
+        width: 100%;
+    }
+    .discount-container{
+        width: 214.023px;
+        height: 79.268px;
+        top: 115px;
+        right: 3px;
+    }
+    .discount-container-title{
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 0.99088rem;
+        font-weight: 400;       
+    }
+    .discount-container-description{
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 1.32113rem;
+        font-weight: 800;       
+    }
+    .newsletter-text-title{
+        margin-top: 10px;
+    }
+    .newsletter-text-container{
+        text-align: center;
+    }
+    .newsletter-form-container{
+        width: 335px;
+        height: 353px;
+        padding: 10px;
+    }
+    form input[type=text]{
+        width: 288px;
+        height: 52px;
+        margin: 0 auto;
+    }
+    hr{
+        margin-left: auto;
+        margin-right: auto;
+        width: 288px;
+    }
+    form{
+        gap: 10px;
+    }
+    form button{
+        width: 288px;
+        height: 52px;
+        margin: 0 auto;
+    }
+    .hr-line hr{
+        width: 335px;
+    }
+    .social-icons {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .copyright{
+        margin-top: 24px;
+    }
+    footer{
+        margin-top: 24px;
+    }
+
 }
