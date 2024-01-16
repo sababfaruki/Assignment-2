@@ -224,4 +224,7 @@
         padding: 20px;
         padding-bottom: 0;
     }
+    .btn-primary{
+        margin-left: 20px;
+    }
 }
