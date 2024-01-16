@@ -1,5 +1,61 @@
-/* nav portion */
 
+/* nav portion */
+.burgerbar{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 375px;
+    z-index: 1000;
+    backdrop-filter: blur(15px);
+    background-color: #ff55009c;
+    box-shadow: -12px 0px 12px rgba(0,0,0,0.2);
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.burgerbar li,a{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    gap: 44px;
+    list-style: none;
+
+}
+nav ul li{
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: var(--Dark-02, #424247);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+}
+nav ul a span{
+    color: #FF5400;
+}
+.nav-container{
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.nav-container .name-logo{
+    padding-left: 10px;
+}
+.burger-btn{
+    display: none;
+}
 /* banner portion */
 .banner-text{
     background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Images/Group\ 13\ \(1\)\ \(1\).png); 
@@ -82,17 +138,19 @@
     background: #FF5400;    
     border: none;
     color: #FFF;
-    text-align: center;
+    text-align: left;
     font-family: Mulish;
     font-size: 1rem;
     font-weight: 700;
 }
 .search i{
-    margin-right: 8px;
+    margin-right: px;
 }
 .search a{
     text-decoration: none;
     color: #FFF;
+    margin-left: 40px;
+
 }
 /* main portion 1 */
 .popular-container{
@@ -270,6 +328,78 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.625rem;   
+}
+/* packages portion */
+.package-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 50px;
+}
+.package-container-text{
+
+}
+.package-container-title{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.package-container-description{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.package-card-container{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.package-card{
+    height: 100%;
+    border: 3px solid rgba(233, 68, 68, 0.20);
+    border-radius: 16px;
+    background-color: rgba(233, 68, 68, 0.05);
+}
+.package-card-name{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40px;
+}
+.package-card-price{
+    font-family: Mulish;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #FF5400;
+    text-align: center;
+    border: 3px solid #FF5400;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    background-color: #131318;
+    box-shadow: 5px 0px 50px 0px;
+}
+.package-card-description p{
+    color: #5A5A5D;
+    margin: 0;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 /* main newsletter portion */
 .newsletter-container{
@@ -493,6 +623,10 @@ footer{
         margin-right: auto;
         margin-bottom: 16px;
     }
+    .search a {
+        margin-left: 75px;
+        margin-right: auto;
+    }
     .popular-container{
         flex-direction: column;
         margin: 0;
@@ -660,5 +794,26 @@ footer{
     footer{
         margin-top: 24px;
     }
-
+    .disp-hide{
+        display: none;
+    }
+    .nav-container{
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .nav-container .name-logo{
+        padding-left: 20px;
+    }
+    .nav-portion li img{
+        margin-right:20px ;
+    }
+    .burgerbar{
+        width: 100%;
+    }
+    .burger-btn{
+        display: block;
+    }
+    .package-card-container{
+       flex-direction: column;
+    }
 }
