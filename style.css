@@ -423,6 +423,66 @@ input.search-input::placeholder {
     font-weight: 400;
     line-height: 1.625rem;   
 }
+/* video portion styles */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin-top: 100px;
+
+
+}
+
+.video-text-container {
+    max-width: 610px; 
+}
+.video-text-container ul li{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+}
+.video-text-container button{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400; 
+    border: none; 
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.25rem;
+    font-weight: 800; 
+}
+.video-text-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3.75rem;   
+}
+
+.video-text-description {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;    
+}
+
+.video {
+    width: 610px;
+    height: 424px;
+    border-radius: 16px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
 /* main newsletter portion */
 .newsletter-container{
     display: flex;
@@ -759,6 +819,16 @@ footer{
     .package-portion-container{
         flex-direction: column;
         gap: 16px;
+    }
+    .video-container{
+        flex-direction: column;
+    }
+    .video-text-title, .video-text-description{
+        text-align: center;
+    }
+    .video{
+        width: 335px;
+        height: 200px;
     }
     .newsletter-container{
         flex-direction: column;
