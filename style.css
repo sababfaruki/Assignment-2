@@ -337,9 +337,6 @@ nav ul a span{
     gap: 16px;
     margin-top: 50px;
 }
-.package-container-text{
-
-}
 .package-container-title{
     color: #131318;
     text-align: center;
@@ -399,7 +396,7 @@ nav ul a span{
     font-weight: 400;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 /* main newsletter portion */
 .newsletter-container{
