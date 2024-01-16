@@ -10,7 +10,7 @@
     width: 375px;
     z-index: 1000;
     backdrop-filter: blur(15px);
-    background-color: #ff55009c;
+    background-color: #FFF;
     box-shadow: -12px 0px 12px rgba(0,0,0,0.2);
     align-items: flex-start;
     justify-content: flex-start;
@@ -726,6 +726,7 @@ footer{
     .newsletter-container{
         flex-direction: column;
         margin-top: 24px;
+        align-items: center;
     }
     .newsletter-img img{
         width: 100%;
