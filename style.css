@@ -204,6 +204,7 @@
     .popular-container{
         flex-direction: column;
         margin: 0;
+        gap: 0;
     }
     .popular-text{
         width: 100%;
@@ -213,6 +214,7 @@
     height: 342px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     }
     .popular-text p{
         padding: 20px;
