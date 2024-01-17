@@ -631,8 +631,9 @@ footer{
     justify-content: center;
     margin-bottom: 50px;
 }
-.icon-img i{
-    color: #131318;
+.icon-img a{
+    padding: 0;
+    margin: 0;
 }
 .copyright p{
     display: flex;
